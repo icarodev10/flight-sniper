@@ -4,6 +4,12 @@
 ![Selenium](https://img.shields.io/badge/Selenium-Web%20Scraping-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 
+
+
+https://github.com/user-attachments/assets/f26fc98e-b238-4f5f-9558-a33639ffe4e3
+
+
+
 ## 📋 About the Project
 
 This project is a practical study of **RPA (Robotic Process Automation)** and **Web Scraping**.
