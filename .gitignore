@@ -1,0 +1,17 @@
+# Arquivos de compilação do Python
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais 
+env/
+venv/
+.env
+
+# O relatório gerado 
+relatorio_passagens.csv
+
+# Arquivos do Streamlit
+.streamlit/
+
+# Logs de erro
+*.log
