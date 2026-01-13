@@ -60,3 +60,6 @@ This software was developed strictly for **educational purposes**, focusing on l
 
 **Developed by Icaro de Souza de Lima**
 *Python Developer and Student*
+
+
+> ℹ️ **Note:** The source code comments and User Interface are currently in **Portuguese (PT-BR)**, as this tool was designed for the Brazilian airline market context.
