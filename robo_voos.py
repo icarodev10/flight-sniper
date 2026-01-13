@@ -23,9 +23,12 @@ import csv
 # Exemplos:
 # - VCP: Viracopos (Campinas/SP)
 # - GRU: Guarulhos (São Paulo/SP)
+# - CGH: Congonhas (São Paulo/SP)
+# - SDU: Santos Dumont (Rio de Janeiro/RJ)
 # - CNF: Confins (Belo Horizonte/MG)
 # - GIG: Galeão (Rio de Janeiro/RJ)
 # - JFK: John F. Kennedy (Nova York/EUA)
+
 
 # ==============================================================================
 # FUNÇÃO PRINCIPAL
@@ -52,6 +55,13 @@ def buscar_precos(origem, destino, data_inicial, dias_analise, preco_maximo):
     # options.add_argument("--headless")  # Descomente para rodar sem abrir a janela do navegador
     servico = Service(ChromeDriverManager().install())
     navegador = webdriver.Chrome(service=servico, options=options)
+
+    # --- CONFIGURAÇÃO DA JANELA ---
+    # Define o tamanho (Largura, Altura)
+    navegador.set_window_size(800, 600) 
+    
+    # Define a posição na tela (X, Y)
+    navegador.set_window_position(50, 50)
 
     # Conversão da string de data para objeto datetime
     data_obj = datetime.strptime(data_inicial, "%Y-%m-%d")
