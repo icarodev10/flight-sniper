@@ -31,7 +31,7 @@ The goal was to develop a "bot" capable of navigating complex dynamic websites (
 1.  Clone the repository:
 
     git clone [https://github.com/icarodev10/flight-sniper.git](https://github.com/icarodev10/flight-sniper.git)
-    ```
+    
 
 2.  Install dependencies:
 
