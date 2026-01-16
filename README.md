@@ -7,7 +7,7 @@
 
 > **Watch the Demo:** 👇
 >
-> https://github.com/user-attachments/assets/f26fc98e-b238-4f5f-9558-a33639ffe4e3
+> https://github.com/user-attachments/assets/a5f3d705-37aa-4189-9de3-733ee93d1e7e
 
 ## 📋 About the Project
 
