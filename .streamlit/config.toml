@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#2E86C1"    # Azul Aviação (Botões e Sliders)
+backgroundColor = "#FFFFFF" # Fundo Branco limpo
+secondaryBackgroundColor = "#F0F2F6" # Fundo da Sidebar (Cinza clarinho)
+textColor = "#262730"       # Texto Preto Suave
+font = "sans serif"         # Fonte moderna

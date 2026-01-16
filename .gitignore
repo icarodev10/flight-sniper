@@ -1,17 +1,29 @@
-# Arquivos de compilação do Python
+# --- PYTHON ---
 __pycache__/
 *.py[cod]
+*.pyc
 
-# Ambientes virtuais 
+# --- AMBIENTE VIRTUAL ---
 env/
 venv/
+.venv/
+
+# --- SEGURANÇA  ---
 .env
+.streamlit/secrets.toml
 
-# O relatório gerado 
-relatorio_passagens.csv
+# --- DADOS LOCAIS ---
+*.db
+*.sqlite3
 
-# Arquivos do Streamlit
-.streamlit/
-
-# Logs de erro
+# --- LOGS E DEPURAÇÃO ---
 *.log
+geckodriver.log
+chromedriver.log
+
+# --- EDITOR DE CÓDIGO ---
+.vscode/
+
+# --- SISTEMA OPERACIONAL (Windows/Mac) ---
+.DS_Store
+Thumbs.db

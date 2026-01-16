@@ -1,65 +1,75 @@
-# ✈️ Flight Sniper - RPA Automation with Python
+# ✈️ Flight Sniper Pro - Intelligent RPA for Airfare Monitoring
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Selenium](https://img.shields.io/badge/Selenium-Web%20Scraping-green)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![Selenium](https://img.shields.io/badge/Selenium-Undetected-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![SQLite](https://img.shields.io/badge/Database-SQLite3-lightgrey)
 
-
-
-https://github.com/user-attachments/assets/f26fc98e-b238-4f5f-9558-a33639ffe4e3
-
-
+> **Watch the Demo:** 👇
+>
+> https://github.com/user-attachments/assets/f26fc98e-b238-4f5f-9558-a33639ffe4e3
 
 ## 📋 About the Project
 
-This project is a practical study of **RPA (Robotic Process Automation)** and **Web Scraping**.
+**Flight Sniper Pro** is an advanced **RPA (Robotic Process Automation)** tool designed to solve a real-world problem: finding the best time to buy flight tickets without constant manual checking.
 
-The goal was to develop a "bot" capable of navigating complex dynamic websites (flight booking platforms), extracting real-time data, and presenting it on an interactive Dashboard for decision-making.
+Unlike simple scrapers, this bot uses **computer vision techniques (Regex)** and **anti-detection algorithms** to navigate dynamic Google Flights pages, extract hidden data, and calculate historical averages to identify *true* discounts.
 
-**Technical Highlight:** The system demonstrates how to integrate a Backend Script (Selenium) with a Frontend Interface (Streamlit), using CSV files as an intermediate database.
+**Key Highlight:** The system features a "Stealth Mode" to bypass bot detection (Cloudflare/Google) and integrates a full-stack flow: **Scraping (Backend) ➡️ Database (SQLite) ➡️ Analytics (Frontend) ➡️ Notification (Email).**
 
-## 🚀 Features
+## 🚀 Key Features
 
-* **Automated Search:** Autonomous navigation and scanning of multiple consecutive dates.
-* **Data Processing:** Data Cleaning and currency conversion.
-* **Interactive Dashboard:** Visual representation of price fluctuations.
-* **IATA Codes:** Support for international airport codes (e.g., JFK, LHR, GRU).
+* **🕵️‍♂️ Stealth Mode Automation:** Uses `undetected-chromedriver` to mimic human behavior and avoid IP blocks/CAPTCHAs.
+* **🧠 Market Intelligence:** Calculates the **Historical Average** of the route. It doesn't just show the price; it tells you if it's cheap compared to the past.
+* **📧 Smart Alerts:** Automatically sends an email notification when a "Super Promo" (price 20% below average) is found.
+* **⚡ Actionable Dashboard:** A Streamlit interface with real-time logs, progress bars, and **Direct Purchase Links** deep-linked to the airline's offer.
+* **📊 Data Persistence:** All data is saved in a local SQLite database for long-term trend analysis.
 
 ## 🛠️ Tech Stack
 
-* **Python:** Core logic.
-* **Selenium WebDriver:** Browser automation and DOM interaction.
-* **Pandas:** Data manipulation and analysis (Dataframes).
-* **Streamlit:** Web interface and data visualization.
+* **Core:** Python 3.11+
+* **Automation:** Selenium WebDriver & Undetected-Chromedriver
+* **Data Engineering:** Pandas (ETL) & SQLite (Storage)
+* **Regex:** Advanced text pattern extraction (Time/Currency)
+* **Frontend:** Streamlit (Reactive Dashboard with CSS injection)
+* **DevOps:** Environment Variables (`.env`) for credential security.
 
 ## 📦 How to Run
 
-1.  Clone the repository:
+1.  **Clone the repository:**
 
     git clone [https://github.com/icarodev10/flight-sniper.git](https://github.com/icarodev10/flight-sniper.git)
-    
+    cd flight-sniper
 
-2.  Install dependencies:
+
+2.  **Install dependencies:**
 
     pip install -r requirements.txt
 
 
-3.  Run the Dashboard:
+3.  **Configure Credentials:**
+    * Rename `.env.example` to `.env`.
+    * Add your email credentials (required for alerts).
+
+4.  **Run the App:**
 
     streamlit run dashboard.py
 
-    The system will open in your default browser. Configure your trip in the sidebar and click "Start Auto Search".
+    The application will open in your browser at `http://localhost:8501`.
 
----
+## 📂 Project Structure
 
-## ⚠️ Disclaimer
+flight-sniper/
+├── dashboard.py       # Frontend: UI, Charts, and Control Logic
+├── robo_voos.py       # Backend: The Scraper Core & Email Logic
+├── meus_voos.db       # Database (Created automatically)
+├── requirements.txt   # Project dependencies
+├── .env.example       # Security template
+└── README.md          # Documentation
 
-This software was developed strictly for **educational purposes**, focusing on learning programming logic, task automation, and data analysis. Do not use this tool to overload third-party servers (DDoS) or violate terms of service. The ethical use of automation is the user's responsibility.
+⚠️ Disclaimer
+This software was developed strictly for educational purposes, focusing on learning programming logic, task automation, and data engineering. The developer is not responsible for any misuse of this tool.
 
----
+Developed by Icaro de Souza de Lima Python Developer & RPA Enthusiast
 
-**Developed by Icaro de Souza de Lima**
-*Python Developer and Student*
-
-
-> ℹ️ **Note:** The source code comments and User Interface are currently in **Portuguese (PT-BR)**, as this tool was designed for the Brazilian airline market context.
+ℹ️ Note: The source code comments and User Interface are currently in Portuguese (PT-BR), designed for the Brazilian market context.
