@@ -60,11 +60,17 @@ Unlike simple scrapers, this bot uses **computer vision techniques (Regex)** and
 ## 📂 Project Structure
 
 flight-sniper/
+
 ├── dashboard.py       # Frontend: UI, Charts, and Control Logic
+
 ├── robo_voos.py       # Backend: The Scraper Core & Email Logic
+
 ├── meus_voos.db       # Database (Created automatically)
+
 ├── requirements.txt   # Project dependencies
+
 ├── .env.example       # Security template
+
 └── README.md          # Documentation
 
 ⚠️ Disclaimer
