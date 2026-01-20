@@ -1,6 +1,6 @@
 # ✈️ Flight Sniper Pro - Intelligent RPA for Airfare Monitoring
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Selenium](https://img.shields.io/badge/Selenium-Undetected-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 ![SQLite](https://img.shields.io/badge/Database-SQLite3-lightgrey)
